@@ -16,7 +16,7 @@ protocol APIClienting {
     /// Returns  path terminating with `/v1`.  Default implementation provided.
     static var v1Path: String { get }
     /// Returns client access key. Default implementation provided.
-    static var clientAccessKey: String { get }
+    static var clientAccessKey: String? { get }
     /// Returns default headers. Default implementation provided.
     static var defaultHeaders: HTTPHeaders { get }
     
@@ -32,8 +32,14 @@ extension APIClienting {
     static var hostPath: String { "https://whencantherocksplay.herokuapp.com" }
     static var apiPath: String { hostPath.pathed("api") }
     static var v1Path: String { apiPath.pathed("v1") }
-    static var clientAccessKey: String { ProcessInfo.processInfo.environment["CA_KEY"] ?? "" }
-    static var defaultHeaders: HTTPHeaders { .init(["Access-Key": clientAccessKey]) }
+    static var clientAccessKey: String? { ProcessInfo.processInfo.environment["CA_KEY"] }
+    static var defaultHeaders: HTTPHeaders {
+        guard let clientAccessKey = clientAccessKey else {
+            return .init()
+        }
+
+        return .init(["Access-Key": clientAccessKey])
+    }
 }
 
 struct APIClient: APIClienting {

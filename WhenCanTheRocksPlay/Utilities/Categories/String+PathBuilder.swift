@@ -8,5 +8,5 @@
 import Foundation
 
 extension String {
-    func pathed(_ component: String...) -> String { self + "/" + component.joined(separator: "/") }
+    func pathed(_ component: String...) -> String { self + (self.last == "/" ? "" : "/") + component.joined(separator: "/") }
 }
