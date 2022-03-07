@@ -7,6 +7,7 @@
 
 import Alamofire
 import Foundation
+import WCTRPCommon
 
 protocol APIClienting {
     /// Returns path for host. Default implementation provided.
@@ -21,7 +22,7 @@ protocol APIClienting {
     static var defaultHeaders: HTTPHeaders { get }
     
     /// Executes get request for `/health` endpoint.
-    static func getHealth() async throws -> HealthResponse
+    static func getHealth() async throws -> V1HealthResponse
     /// Executes get request for `/areas` endpoint.
     static func getAreas() async throws -> AreasResponse
     /// Executes get request for `/areas/{id}` endpoint.
@@ -43,8 +44,8 @@ extension APIClienting {
 }
 
 struct APIClient: APIClienting {
-    static func getHealth() async throws -> HealthResponse {
-        return try await AF.request(v1Path.pathed("health")).asyncResponseDecodable(of: HealthResponse.self)
+    static func getHealth() async throws -> V1HealthResponse {
+        return try await AF.request(v1Path.pathed("health")).asyncResponseDecodable(of: V1HealthResponse.self)
     }
     
     static func getAreas() async throws -> AreasResponse {
