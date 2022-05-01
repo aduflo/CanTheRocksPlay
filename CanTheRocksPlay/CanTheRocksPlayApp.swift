@@ -13,12 +13,16 @@ struct CanTheRocksPlayApp: App {
     init() {
         Task {
             print("starting task")
-            let health = try? await APIClient.getHealth()
-            print(health)
-            let areas = try? await APIClient.getAreas()
-            print(areas)
-            let areasById = try? await APIClient.getArea(id: "1")
-            print(areasById)
+            print("\n")
+            let health = try? await MockAPIClient.getHealth()
+            print("health: \(health)")
+            print("\n")
+            let areas = try? await MockAPIClient.getAreas()
+            print("areas: \(areas)")
+            print("\n")
+            let areasById = try? await MockAPIClient.getArea(id: "")
+            print("areasById: \(areasById)")
+            print("\n")
         }
     }
     

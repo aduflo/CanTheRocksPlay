@@ -1,8 +1,8 @@
 //
-//  APIClient.swift
+//  APIClienting.swift
 //  CanTheRocksPlay
 //
-//  Created by Adam Duflo on 2/27/22.
+//  Created by Adam Duflo on 5/1/22.
 //
 
 import Alamofire
@@ -20,7 +20,7 @@ protocol APIClienting {
     static var clientAccessKey: String? { get }
     /// Returns default headers. Default implementation provided.
     static var defaultHeaders: HTTPHeaders { get }
-    
+
     /// Executes get request for `/health` endpoint.
     static func getHealth() async throws -> V1HealthResponse
     /// Executes get request for `/areas` endpoint.
@@ -30,8 +30,8 @@ protocol APIClienting {
 }
 
 extension APIClienting {
-    static var hostPath: String { "http://localhost:8080" }
-//    static var hostPath: String { "https://cantherocksplay.herokuapp.com" }
+//    static var hostPath: String { "http://localhost:8080" }
+    static var hostPath: String { "https://cantherocksplay.herokuapp.com" }
     static var apiPath: String { hostPath.pathed("api") }
     static var v1Path: String { apiPath.pathed("v1") }
     static var clientAccessKey: String? { ProcessInfo.processInfo.environment["CA_KEY"] }
@@ -41,19 +41,5 @@ extension APIClienting {
         }
 
         return .init(["Access-Key": clientAccessKey])
-    }
-}
-
-struct APIClient: APIClienting {
-    static func getHealth() async throws -> V1HealthResponse {
-        return try await AF.request(v1Path.pathed("health")).asyncResponseDecodable(of: V1HealthResponse.self)
-    }
-    
-    static func getAreas() async throws -> AreasResponse {
-        return try await AF.request(v1Path.pathed("areas"), headers: defaultHeaders).asyncResponseDecodable(of: AreasResponse.self)
-    }
-    
-    static func getArea(id: String) async throws -> AreasByIdResponse {
-        return try await AF.request(v1Path.pathed("areas", id), headers: defaultHeaders).asyncResponseDecodable(of: AreasByIdResponse.self)
     }
 }

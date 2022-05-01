@@ -1,0 +1,148 @@
+{
+    "areas": [
+        {
+            "coordinate": {
+                "latitude": "37.870322840511534",
+                "longitude": "-119.54015724464388"
+            },
+            "zone": "pacific",
+            "id": "1336A769-EDD5-4CB7-A2ED-4B8F06641AEC",
+            "name": "Yosemite National Park"
+        },
+        {
+            "coordinate": {
+                "latitude": "37.36165701038517",
+                "longitude": "-118.40066648827799"
+            },
+            "zone": "pacific",
+            "id": "DFFB3A9A-3521-41AB-9D3F-945E3C72BD06",
+            "name": "Bishop"
+        },
+        {
+            "coordinate": {
+                "longitude": "-109.53922757138639",
+                "latitude": "38.02570696975626"
+            },
+            "zone": "mountain",
+            "id": "56389377-643E-4E2F-844C-C410AF41EDB1",
+            "name": "Indian Creek"
+        },
+        {
+            "coordinate": {
+                "longitude": "-106.04369166546091",
+                "latitude": "31.916516190754773"
+            },
+            "zone": "mountain",
+            "id": "73D995BD-772C-4F5F-BF97-4717E8E0A40B",
+            "name": "Hueco Tanks"
+        },
+        {
+            "coordinate": {
+                "latitude": "41.72558342832264",
+                "longitude": "-74.20446298519332"
+            },
+            "zone": "eastern",
+            "id": "B6EDA8DF-56D1-49C0-B152-D3A526445579",
+            "name": "The Shawangunks"
+        },
+        {
+            "coordinate": {
+                "longitude": "-83.56668016373791",
+                "latitude": "37.824437249716546"
+            },
+            "zone": "eastern",
+            "id": "F5723151-2F4E-44AD-B2E5-F09FDAE68C7D",
+            "name": "Red River Gorge"
+        },
+        {
+            "coordinate": {
+                "latitude": "33.8837037103912",
+                "longitude": "-115.88818209306478"
+            },
+            "name": "Joshua Tree",
+            "id": "D9D0E883-878B-496B-BA8A-59B6CCA474FA",
+            "zone": "pacific"
+        },
+        {
+            "coordinate": {
+                "latitude": "36.19460910534966",
+                "longitude": "-115.43825378678054"
+            },
+            "name": "Red Rock",
+            "id": "C464802B-33EA-4AAB-9D53-1544A5115B51",
+            "zone": "pacific"
+        },
+        {
+            "coordinate": {
+                "latitude": "37.87743866222177",
+                "longitude": "-81.01747485789843"
+            },
+            "name": "New River Gorge",
+            "id": "0756EB6D-9981-4C2A-BAFC-283FC0174807",
+            "zone": "eastern"
+        },
+        {
+            "coordinate": {
+                "latitude": "44.36846062794378",
+                "longitude": "-121.14016297728101"
+            },
+            "name": "Smith Rock",
+            "id": "2926D847-9B73-491D-B3A6-FF476516A264",
+            "zone": "pacific"
+        },
+        {
+            "coordinate": {
+                "latitude": "38.57345720018103",
+                "longitude": "-109.54970206691677"
+            },
+            "name": "Moab",
+            "id": "76230D97-F7B8-4E4C-A22E-2AA6C1DF257E",
+            "zone": "mountain"
+        },
+        {
+            "coordinate": {
+                "longitude": "-71.81215123874279",
+                "latitude": "43.80537684026602"
+            },
+            "name": "Rumney",
+            "id": "3C69C968-3501-4C34-9118-760CCB288EC4",
+            "zone": "eastern"
+        },
+        {
+            "coordinate": {
+                "longitude": "-86.30823515377098",
+                "latitude": "33.92195338331921"
+            },
+            "name": "Horse Pens 40",
+            "id": "3AD2B069-C089-4FA9-91F3-AF9364496EAD",
+            "zone": "central"
+        },
+        {
+            "coordinate": {
+                "latitude": "35.248204395457876",
+                "longitude": "-85.22003396961017"
+            },
+            "name": "Stone Fort (Little Rock City)",
+            "id": "4B9ECC76-8EDA-42A0-8720-14C245878620",
+            "zone": "eastern"
+        },
+        {
+            "coordinate": {
+                "latitude": "34.65958069929011",
+                "longitude": "-85.38799535185372"
+            },
+            "name": "Rocktown",
+            "id": "14F8DB27-1905-417D-894A-0A754C339E35",
+            "zone": "eastern"
+        },
+        {
+            "coordinate": {
+                "longitude": "-118.60373755315237",
+                "latitude": "34.27069173711605"
+            },
+            "name": "Stoney Point",
+            "id": "F6F18431-5F5A-401D-9719-A3A7FD51EF05",
+            "zone": "pacific"
+        }
+    ]
+}

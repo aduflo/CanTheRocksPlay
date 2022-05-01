@@ -1,0 +1,92 @@
+{
+    "metadata": {
+        "coordinate": {
+            "longitude": "-115.43825378678054",
+            "latitude": "36.19460910534966"
+        },
+        "id": "C464802B-33EA-4AAB-9D53-1544A5115B51",
+        "zone": "pacific",
+        "name": "Red Rock"
+    },
+    "weather": {
+        "today": {
+            "temperature": {
+                "low": {
+                    "value": 66,
+                    "unit": "F"
+                },
+                "high": {
+                    "value": 91,
+                    "unit": "F"
+                }
+            },
+            "nighttimeInfo": {
+                "message": "Clear",
+                "precipitation": {
+                    "probability": 0,
+                    "amount": {
+                        "unit": "in",
+                        "value": 0
+                    }
+                }
+            },
+            "daytimeInfo": {
+                "message": "Plenty of sunshine",
+                "precipitation": {
+                    "amount": {
+                        "unit": "in",
+                        "value": 0
+                    },
+                    "probability": 0
+                }
+            }
+        },
+        "dailyHistories": [
+            {
+                "precipitation": {
+                    "amount": {
+                        "imperial": {
+                            "value": 0,
+                            "unit": "in"
+                        },
+                        "metric": {
+                            "value": 0,
+                            "unit": "mm"
+                        }
+                    }
+                },
+                "date": "2022-04-30"
+            },
+            {
+                "precipitation": {
+                    "amount": {
+                        "metric": {
+                            "unit": "mm",
+                            "value": 0
+                        },
+                        "imperial": {
+                            "unit": "in",
+                            "value": 0
+                        }
+                    }
+                },
+                "date": "2022-04-29"
+            },
+            {
+                "precipitation": {
+                    "amount": {
+                        "metric": {
+                            "unit": "mm",
+                            "value": 0
+                        },
+                        "imperial": {
+                            "unit": "in",
+                            "value": 0
+                        }
+                    }
+                },
+                "date": "2022-04-28"
+            }
+        ]
+    }
+}
