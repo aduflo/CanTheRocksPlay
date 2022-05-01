@@ -11,19 +11,19 @@ import SwiftUI
 struct CanTheRocksPlayApp: App {
     
     init() {
-        Task {
-            print("starting task")
-            print("\n")
-            let health = try? await MockAPIClient.getHealth()
-            print("health: \(health)")
-            print("\n")
-            let areas = try? await MockAPIClient.getAreas()
-            print("areas: \(areas)")
-            print("\n")
-            let areasById = try? await MockAPIClient.getArea(id: "")
-            print("areasById: \(areasById)")
-            print("\n")
-        }
+//        Task {
+//            print("starting task")
+//            print("\n")
+//            let health = try? await MockAPIClient.getHealth()
+//            print("health: \(health)")
+//            print("\n")
+//            let areas = try? await MockAPIClient.getAreas()
+//            print("areas: \(areas)")
+//            print("\n")
+//            let areasById = try? await MockAPIClient.getArea(id: "")
+//            print("areasById: \(areasById)")
+//            print("\n")
+//        }
     }
     
     @Environment(\.scenePhase) var scenePhase
