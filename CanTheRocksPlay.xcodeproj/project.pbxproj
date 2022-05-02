@@ -17,14 +17,14 @@
 		69A788C1281EDBAD00EFCC98 /* v1AreasByIdResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A788BE281EDBAD00EFCC98 /* v1AreasByIdResponse.json */; };
 		69A788C2281EDBAD00EFCC98 /* v1HealthResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A788BF281EDBAD00EFCC98 /* v1HealthResponse.json */; };
 		69A788C3281EDBAD00EFCC98 /* v1AreasResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A788C0281EDBAD00EFCC98 /* v1AreasResponse.json */; };
-		69A788C5281EE68C00EFCC98 /* AreasListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A788C4281EE68C00EFCC98 /* AreasListViewModel.swift */; };
-		69A788C9281EE6C600EFCC98 /* AreasListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A788C8281EE6C600EFCC98 /* AreasListView.swift */; };
+		69A788C5281EE68C00EFCC98 /* AreasGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A788C4281EE68C00EFCC98 /* AreasGridViewModel.swift */; };
+		69A788C9281EE6C600EFCC98 /* AreasGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A788C8281EE6C600EFCC98 /* AreasGridView.swift */; };
 		69C5107027CBF3E0000B8D07 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5106F27CBF3E0000B8D07 /* APIClient.swift */; };
 		69C5107327CBF406000B8D07 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 69C5107227CBF406000B8D07 /* Alamofire */; };
 		69C5107D27CC0D8C000B8D07 /* DataRequest+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5107C27CC0D8C000B8D07 /* DataRequest+Async.swift */; };
 		69F27AA9281EF09C004F6EFE /* Area+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AA8281EF09C004F6EFE /* Area+Identifiable.swift */; };
-		69F27AAB281EF10E004F6EFE /* AreaListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAA281EF10E004F6EFE /* AreaListItemView.swift */; };
-		69F27AAD281EF11A004F6EFE /* AreaListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAC281EF11A004F6EFE /* AreaListItemViewModel.swift */; };
+		69F27AAB281EF10E004F6EFE /* AreaGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */; };
+		69F27AAD281EF11A004F6EFE /* AreaGridItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */; };
 		69FDB2F727935293005F7841 /* CanTheRocksPlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB2F627935293005F7841 /* CanTheRocksPlayApp.swift */; };
 		69FDB2F927935293005F7841 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB2F827935293005F7841 /* ContentView.swift */; };
 		69FDB2FB27935294005F7841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FDB2FA27935294005F7841 /* Assets.xcassets */; };
@@ -60,13 +60,13 @@
 		69A788BE281EDBAD00EFCC98 /* v1AreasByIdResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1AreasByIdResponse.json; sourceTree = "<group>"; };
 		69A788BF281EDBAD00EFCC98 /* v1HealthResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1HealthResponse.json; sourceTree = "<group>"; };
 		69A788C0281EDBAD00EFCC98 /* v1AreasResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1AreasResponse.json; sourceTree = "<group>"; };
-		69A788C4281EE68C00EFCC98 /* AreasListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasListViewModel.swift; sourceTree = "<group>"; };
-		69A788C8281EE6C600EFCC98 /* AreasListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasListView.swift; sourceTree = "<group>"; };
+		69A788C4281EE68C00EFCC98 /* AreasGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasGridViewModel.swift; sourceTree = "<group>"; };
+		69A788C8281EE6C600EFCC98 /* AreasGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasGridView.swift; sourceTree = "<group>"; };
 		69C5106F27CBF3E0000B8D07 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		69C5107C27CC0D8C000B8D07 /* DataRequest+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Async.swift"; sourceTree = "<group>"; };
 		69F27AA8281EF09C004F6EFE /* Area+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+Identifiable.swift"; sourceTree = "<group>"; };
-		69F27AAA281EF10E004F6EFE /* AreaListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListItemView.swift; sourceTree = "<group>"; };
-		69F27AAC281EF11A004F6EFE /* AreaListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListItemViewModel.swift; sourceTree = "<group>"; };
+		69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGridItemView.swift; sourceTree = "<group>"; };
+		69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGridItemViewModel.swift; sourceTree = "<group>"; };
 		69FDB2F327935293005F7841 /* CanTheRocksPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanTheRocksPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FDB2F627935293005F7841 /* CanTheRocksPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanTheRocksPlayApp.swift; sourceTree = "<group>"; };
 		69FDB2F827935293005F7841 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				69A788C7281EE6B200EFCC98 /* ViewModels */,
-				69A788C8281EE6C600EFCC98 /* AreasListView.swift */,
-				69F27AAA281EF10E004F6EFE /* AreaListItemView.swift */,
+				69A788C8281EE6C600EFCC98 /* AreasGridView.swift */,
+				69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,8 +171,8 @@
 		69A788C7281EE6B200EFCC98 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				69A788C4281EE68C00EFCC98 /* AreasListViewModel.swift */,
-				69F27AAC281EF11A004F6EFE /* AreaListItemViewModel.swift */,
+				69A788C4281EE68C00EFCC98 /* AreasGridViewModel.swift */,
+				69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -415,15 +415,15 @@
 			files = (
 				6946567027C9867200EEF2B2 /* DateFormatter+ISO8601.swift in Sources */,
 				69A788BC281EDAB900EFCC98 /* APIClienting.swift in Sources */,
-				69F27AAD281EF11A004F6EFE /* AreaListItemViewModel.swift in Sources */,
-				69A788C9281EE6C600EFCC98 /* AreasListView.swift in Sources */,
+				69F27AAD281EF11A004F6EFE /* AreaGridItemViewModel.swift in Sources */,
+				69A788C9281EE6C600EFCC98 /* AreasGridView.swift in Sources */,
 				69FDB2F927935293005F7841 /* ContentView.swift in Sources */,
 				69F27AA9281EF09C004F6EFE /* Area+Identifiable.swift in Sources */,
 				69FDB2F727935293005F7841 /* CanTheRocksPlayApp.swift in Sources */,
 				69C5107027CBF3E0000B8D07 /* APIClient.swift in Sources */,
 				69C5107D27CC0D8C000B8D07 /* DataRequest+Async.swift in Sources */,
-				69F27AAB281EF10E004F6EFE /* AreaListItemView.swift in Sources */,
-				69A788C5281EE68C00EFCC98 /* AreasListViewModel.swift in Sources */,
+				69F27AAB281EF10E004F6EFE /* AreaGridItemView.swift in Sources */,
+				69A788C5281EE68C00EFCC98 /* AreasGridViewModel.swift in Sources */,
 				69A788B9281EDA9C00EFCC98 /* MockAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

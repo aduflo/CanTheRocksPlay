@@ -1,5 +1,5 @@
 //
-//  AreaListItemViewModel.swift
+//  AreaGridItemViewModel.swift
 //  CanTheRocksPlay
 //
 //  Created by Adam Duflo on 5/1/22.
@@ -9,7 +9,7 @@ import CTRPCommon
 import Foundation
 import MapKit
 
-struct AreaListItemViewModel {
+struct AreaGridItemViewModel {
     let area: Area
     typealias OnTapHandler = (Area) -> ()
     let onTap: OnTapHandler
@@ -21,9 +21,7 @@ struct AreaListItemViewModel {
     }
 }
 
-extension AreaListItemViewModel {
-    var dimension: CGFloat { 100.0 }
-
+extension AreaGridItemViewModel {
     var displayName: String { area.name }
 
     var coordinateRegion: MKCoordinateRegion {
@@ -34,8 +32,8 @@ extension AreaListItemViewModel {
             longitude: longitude
         )
         let span = MKCoordinateSpan(
-            latitudeDelta: 0.02,
-            longitudeDelta: 0.02
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01
         )
         return MKCoordinateRegion(
             center: coordinate,
