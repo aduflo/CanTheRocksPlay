@@ -33,7 +33,7 @@ struct MockAPIClient: APIClienting {
         return response
     }
 
-    static func getArea(id: String) async throws -> AreasByIdResponse {
+    static func getArea(id: UUID) async throws -> AreasByIdResponse {
         guard let data = getJsonData(resource: "v1AreasByIdResponse"),
               let response = try? JSONDecoder().decode(AreasByIdResponse.self, from: data)
         else {

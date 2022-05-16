@@ -11,8 +11,17 @@ import Foundation
 
 class AreasGridViewModel: ObservableObject {
     @Published var areas: Areas = []
+    @Published var didEncounterError: Bool = false
 
-    init() {
+    typealias AreaTappedHandler = (Area) -> ()
+    let areaTapped: AreaTappedHandler
+    lazy var handledError: () -> () = { [weak self] in
+        self?.didEncounterError = false
+    }
+
+    init(areaTapped: @escaping AreaTappedHandler) {
+        self.areaTapped = areaTapped
+
         Task {
             guard let areas = await getAreas() else { return }
 
@@ -24,7 +33,17 @@ class AreasGridViewModel: ObservableObject {
 }
 
 extension AreasGridViewModel {
+//    var navigationTitle: String { "Climbing Areas" }
+
+    var headerText: String { "Where are you climbing?" }
+
     func getAreas() async -> Areas? {
-        return try? await MockAPIClient.getAreas().areas
+        guard let message = try? await APIClient.getHealth().message, message == "The rocks can play :)" else {
+            didEncounterError = true
+            return nil
+        }
+
+        sleep(3)
+        return try? await APIClient.getAreas().areas
     }
 }

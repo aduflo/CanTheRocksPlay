@@ -18,7 +18,7 @@ struct APIClient: APIClienting {
         return try await AF.request(v1Path.pathed("areas"), headers: defaultHeaders).asyncResponseDecodable(of: AreasResponse.self)
     }
     
-    static func getArea(id: String) async throws -> AreasByIdResponse {
-        return try await AF.request(v1Path.pathed("areas", id), headers: defaultHeaders).asyncResponseDecodable(of: AreasByIdResponse.self)
+    static func getArea(id: UUID) async throws -> AreasByIdResponse {
+        return try await AF.request(v1Path.pathed("areas", id.uuidString), headers: defaultHeaders).asyncResponseDecodable(of: AreasByIdResponse.self)
     }
 }

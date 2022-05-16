@@ -26,7 +26,7 @@ protocol APIClienting {
     /// Executes get request for `/areas` endpoint.
     static func getAreas() async throws -> AreasResponse
     /// Executes get request for `/areas/{id}` endpoint.
-    static func getArea(id: String) async throws -> AreasByIdResponse
+    static func getArea(id: UUID) async throws -> AreasByIdResponse
 }
 
 extension APIClienting {

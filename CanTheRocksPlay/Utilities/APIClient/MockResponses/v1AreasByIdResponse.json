@@ -1,61 +1,71 @@
 {
-    "metadata": {
-        "coordinate": {
-            "longitude": "-115.43825378678054",
-            "latitude": "36.19460910534966"
-        },
-        "id": "C464802B-33EA-4AAB-9D53-1544A5115B51",
-        "zone": "pacific",
-        "name": "Red Rock"
+    "canTheRocksPlay": {
+        "message": "The rocks can play!",
+        "directive": "yes"
     },
-    "weather": {
+    "weatherData": {
         "today": {
             "temperature": {
                 "low": {
-                    "value": 66,
+                    "value": 72,
                     "unit": "F"
                 },
                 "high": {
-                    "value": 91,
+                    "value": 100,
                     "unit": "F"
                 }
             },
-            "nighttimeInfo": {
-                "message": "Clear",
+            "daytime": {
                 "precipitation": {
                     "probability": 0,
                     "amount": {
-                        "unit": "in",
-                        "value": 0
+                        "value": 0,
+                        "unit": "in"
                     }
-                }
+                },
+                "message": "Mostly sunny and very hot"
             },
-            "daytimeInfo": {
-                "message": "Plenty of sunshine",
+            "nighttime": {
                 "precipitation": {
                     "amount": {
-                        "unit": "in",
-                        "value": 0
+                        "value": 0,
+                        "unit": "in"
                     },
                     "probability": 0
-                }
+                },
+                "message": "Clear"
             }
         },
         "dailyHistories": [
             {
                 "precipitation": {
                     "amount": {
-                        "imperial": {
-                            "value": 0,
-                            "unit": "in"
-                        },
                         "metric": {
                             "value": 0,
                             "unit": "mm"
+                        },
+                        "imperial": {
+                            "value": 0,
+                            "unit": "in"
                         }
                     }
                 },
-                "date": "2022-04-30"
+                "date": "2022-05-16"
+            },
+            {
+                "precipitation": {
+                    "amount": {
+                        "metric": {
+                            "value": 0,
+                            "unit": "mm"
+                        },
+                        "imperial": {
+                            "value": 0,
+                            "unit": "in"
+                        }
+                    }
+                },
+                "date": "2022-05-15"
             },
             {
                 "precipitation": {
@@ -70,23 +80,17 @@
                         }
                     }
                 },
-                "date": "2022-04-29"
-            },
-            {
-                "precipitation": {
-                    "amount": {
-                        "metric": {
-                            "unit": "mm",
-                            "value": 0
-                        },
-                        "imperial": {
-                            "unit": "in",
-                            "value": 0
-                        }
-                    }
-                },
-                "date": "2022-04-28"
+                "date": "2022-05-14"
             }
         ]
+    },
+    "metadata": {
+        "zone": "pacific",
+        "coordinate": {
+            "latitude": "36.19460910534966",
+            "longitude": "-115.43825378678054"
+        },
+        "name": "Red Rock",
+        "id": "C464802B-33EA-4AAB-9D53-1544A5115B51"
     }
 }

@@ -25,8 +25,12 @@
 		69F27AA9281EF09C004F6EFE /* Area+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AA8281EF09C004F6EFE /* Area+Identifiable.swift */; };
 		69F27AAB281EF10E004F6EFE /* AreaGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */; };
 		69F27AAD281EF11A004F6EFE /* AreaGridItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */; };
+		69F27AAF282719DD004F6EFE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AAE282719DD004F6EFE /* LoadingView.swift */; };
+		69F27AB1282719E6004F6EFE /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AB0282719E6004F6EFE /* LoadingViewModel.swift */; };
+		69F27AB328271F11004F6EFE /* AreasHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AB228271F11004F6EFE /* AreasHeaderView.swift */; };
+		69F27AB528271F36004F6EFE /* AreasHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F27AB428271F36004F6EFE /* AreasHeaderViewModel.swift */; };
 		69FDB2F727935293005F7841 /* CanTheRocksPlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB2F627935293005F7841 /* CanTheRocksPlayApp.swift */; };
-		69FDB2F927935293005F7841 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB2F827935293005F7841 /* ContentView.swift */; };
+		69FDB2F927935293005F7841 /* AreasContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB2F827935293005F7841 /* AreasContentView.swift */; };
 		69FDB2FB27935294005F7841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FDB2FA27935294005F7841 /* Assets.xcassets */; };
 		69FDB2FE27935294005F7841 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FDB2FD27935294005F7841 /* Preview Assets.xcassets */; };
 		69FDB31227935294005F7841 /* CanTheRocksPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDB31127935294005F7841 /* CanTheRocksPlayUITests.swift */; };
@@ -67,9 +71,13 @@
 		69F27AA8281EF09C004F6EFE /* Area+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+Identifiable.swift"; sourceTree = "<group>"; };
 		69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGridItemView.swift; sourceTree = "<group>"; };
 		69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGridItemViewModel.swift; sourceTree = "<group>"; };
+		69F27AAE282719DD004F6EFE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		69F27AB0282719E6004F6EFE /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		69F27AB228271F11004F6EFE /* AreasHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasHeaderView.swift; sourceTree = "<group>"; };
+		69F27AB428271F36004F6EFE /* AreasHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasHeaderViewModel.swift; sourceTree = "<group>"; };
 		69FDB2F327935293005F7841 /* CanTheRocksPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanTheRocksPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FDB2F627935293005F7841 /* CanTheRocksPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanTheRocksPlayApp.swift; sourceTree = "<group>"; };
-		69FDB2F827935293005F7841 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69FDB2F827935293005F7841 /* AreasContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasContentView.swift; sourceTree = "<group>"; };
 		69FDB2FA27935294005F7841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FDB2FD27935294005F7841 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69FDB30327935294005F7841 /* CanTheRocksPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanTheRocksPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,8 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				69A788C7281EE6B200EFCC98 /* ViewModels */,
-				69A788C8281EE6C600EFCC98 /* AreasGridView.swift */,
 				69F27AAA281EF10E004F6EFE /* AreaGridItemView.swift */,
+				69A788C8281EE6C600EFCC98 /* AreasGridView.swift */,
+				69F27AB228271F11004F6EFE /* AreasHeaderView.swift */,
+				69F27AAE282719DD004F6EFE /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,8 +181,10 @@
 		69A788C7281EE6B200EFCC98 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				69A788C4281EE68C00EFCC98 /* AreasGridViewModel.swift */,
 				69F27AAC281EF11A004F6EFE /* AreaGridItemViewModel.swift */,
+				69A788C4281EE68C00EFCC98 /* AreasGridViewModel.swift */,
+				69F27AB428271F36004F6EFE /* AreasHeaderViewModel.swift */,
+				69F27AB0282719E6004F6EFE /* LoadingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				69FDB2F627935293005F7841 /* CanTheRocksPlayApp.swift */,
-				69FDB2F827935293005F7841 /* ContentView.swift */,
+				69FDB2F827935293005F7841 /* AreasContentView.swift */,
 				69A788C6281EE6AA00EFCC98 /* Views */,
 				69C5107427CBF491000B8D07 /* Models */,
 				69C5106E27CBF3CC000B8D07 /* Utilities */,
@@ -413,17 +425,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F27AB328271F11004F6EFE /* AreasHeaderView.swift in Sources */,
 				6946567027C9867200EEF2B2 /* DateFormatter+ISO8601.swift in Sources */,
 				69A788BC281EDAB900EFCC98 /* APIClienting.swift in Sources */,
 				69F27AAD281EF11A004F6EFE /* AreaGridItemViewModel.swift in Sources */,
+				69F27AB1282719E6004F6EFE /* LoadingViewModel.swift in Sources */,
 				69A788C9281EE6C600EFCC98 /* AreasGridView.swift in Sources */,
-				69FDB2F927935293005F7841 /* ContentView.swift in Sources */,
+				69F27AB528271F36004F6EFE /* AreasHeaderViewModel.swift in Sources */,
+				69FDB2F927935293005F7841 /* AreasContentView.swift in Sources */,
 				69F27AA9281EF09C004F6EFE /* Area+Identifiable.swift in Sources */,
 				69FDB2F727935293005F7841 /* CanTheRocksPlayApp.swift in Sources */,
 				69C5107027CBF3E0000B8D07 /* APIClient.swift in Sources */,
 				69C5107D27CC0D8C000B8D07 /* DataRequest+Async.swift in Sources */,
 				69F27AAB281EF10E004F6EFE /* AreaGridItemView.swift in Sources */,
 				69A788C5281EE68C00EFCC98 /* AreasGridViewModel.swift in Sources */,
+				69F27AAF282719DD004F6EFE /* LoadingView.swift in Sources */,
 				69A788B9281EDA9C00EFCC98 /* MockAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

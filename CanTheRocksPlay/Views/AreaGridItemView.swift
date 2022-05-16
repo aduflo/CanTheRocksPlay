@@ -11,6 +11,7 @@ import SwiftUI
 
 struct AreaGridItemView: View {
     var viewModel: AreaGridItemViewModel
+    
     var body: some View {
         VStack {
             Text(viewModel.displayName)
@@ -37,10 +38,12 @@ struct AreaGridItemView: View {
             viewModel.onTap(viewModel.area)
         }
     }
+}
 
+extension AreaGridItemView {
     init(area: Area,
          onTap: @escaping AreaGridItemViewModel.OnTapHandler) {
-        self.viewModel = AreaGridItemViewModel(
+        viewModel = AreaGridItemViewModel(
             area: area,
             onTap: onTap
         )

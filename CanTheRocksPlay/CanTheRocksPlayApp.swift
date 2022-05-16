@@ -30,7 +30,9 @@ struct CanTheRocksPlayApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            NavigationView {
+                AreasContentView()
+//            }
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
